@@ -1,0 +1,29 @@
+
+.section-excerpt
+
+	background-color: $vermelho-medio
+	color: $background-color
+	padding: $spacing-unit * 2 0
+
+	.excerpt-figure
+		max-width: 480px
+		height: 480px
+		flex-basis: 480px
+		overflow: hidden
+		border-radius: 5000px
+
+		img
+			max-width: initial
+			min-width: 480px
+
+	p
+		max-width: 480px
+		margin: auto
+
+	+media-greater($on-palm)
+
+		div:nth-child(odd) 
+
+			.excerpt-figure-container
+
+				order: 1
