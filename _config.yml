@@ -6,9 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: J&R Logística
+title: "J&R Logística - Aluguel de galpões"
 description: > # this means to ignore newlines until "baseurl:"
-  
+  15.000 m² de galpões e armazéns de alto padrão, com estrutura porta pallet
+  ou área livre para armazenagem de grande porte. Contamos com profissionais
+  habilitados e suporte de maquinário credenciado. O local também é estruturado
+  para visitas, reuniões e atividades administrativas e frota diversificada
+  de veículos.
 baseurl: "/locacao" # the subpath of your site, e.g. /blog
 url: "http://jertransportes.com.br" # the base hostname & protocol for your site
 
