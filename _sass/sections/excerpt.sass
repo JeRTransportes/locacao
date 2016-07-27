@@ -6,15 +6,15 @@
 	padding: $spacing-unit * 2 0
 
 	.excerpt-figure
-		max-width: 480px
-		height: 480px
-		flex-basis: 480px
+		max-width: 400px
+		height: 400px
+		flex-basis: 400px
 		overflow: hidden
 		border-radius: 5000px
 
 		img
-			max-width: initial
-			min-width: 480px
+			max-width: none
+			min-width: 400px
 
 		+media-query($on-laptop)
 			max-width: 300px
@@ -24,12 +24,27 @@
 			img
 				min-width: 300px
 
+		+media-greater($on-desktop)
+			max-width: 480px
+			height: 480px
+			flex-basis: 480px
+
+			img
+				min-width: 480px
+
 	p
-		max-width: 480px
+		max-width: 300px
 		margin: auto
 
 		+media-query($on-laptop)
-			max-width: 300px
+			max-width: 260px
+
+		+media-query($on-palm)
+			max-width: none
+
+		+media-greater($on-desktop)
+			max-width: 480px
+
 
 
 
