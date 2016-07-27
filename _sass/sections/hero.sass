@@ -1,0 +1,30 @@
+
+.section-hero
+	
+	.call-to-action
+		width: 16em
+		text-align: center
+		margin: $spacing-unit / 2
+
+		strong
+			font-size: 1.6em
+
+		a
+			white-space: nowrap
+			padding: $spacing-unit / 2 $spacing-unit
+			background-color: $vermelho-claro
+			color: #FFF
+			border-radius: 5px
+			box-shadow: 0 3px 10px 0 $grey-color-dark
+			text-shadow: 0 -1px 1px $grey-color-dark
+
+		+media-query($on-palm)
+			display: flex
+			width: 100%
+			align-items: center
+			justify-content: space-around
+			flex-wrap: wrap
+			margin-bottom: $spacing-unit
+
+			> *
+				display: inline-block

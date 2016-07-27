@@ -16,9 +16,22 @@
 			max-width: initial
 			min-width: 480px
 
+		+media-query($on-laptop)
+			max-width: 300px
+			height: 300px
+			flex-basis: 300px
+
+			img
+				min-width: 300px
+
 	p
 		max-width: 480px
 		margin: auto
+
+		+media-query($on-laptop)
+			max-width: 300px
+
+
 
 	+media-greater($on-palm)
 
