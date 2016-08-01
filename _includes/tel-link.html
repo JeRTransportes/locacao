@@ -1,1 +1,1 @@
-<a href="tel:{{ include.phone }}"{% if include.class %} class="{{ include.class }}"{% endif %}>{{ include.content }}</a>
+<a href="tel:{{ include.phone }}"{% if include.class %} class="{{ include.class }}"{% endif %} onclick="ga('send', 'event', 'Chamada', '{{ include.label }} [{{ include.phone }}]', location.pathname + ' @ ' + '{{ include.class }}');">{{ include.label }}</a>
