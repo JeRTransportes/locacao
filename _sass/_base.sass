@@ -232,10 +232,18 @@ pre
         &._shrink
             flex: 0 1 auto
 
+    &._wrap
+        flex-wrap: wrap
+    &._nowrap
+        flex-wrap: nowrap
+
     &._center
         align-items: center
         align-content: center
         justify-content: center
+
+    &._stretch
+        align-items: stretch
 
     &._justify
         justify-content: space-between
@@ -248,7 +256,11 @@ pre
             padding: $spacing-unit / 2
 
     +media-query($on-palm)
-        flex-direction: column
+        &:not(._row)
+            flex-direction: column
+
+            > *
+                flex-basis: auto
 
         > *
             max-width: 100%

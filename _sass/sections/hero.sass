@@ -12,7 +12,7 @@
 
 	.embed-container
 		margin: $spacing-unit auto
-	
+
 	.call-to-action
 		width: 16em
 		text-align: center
@@ -20,15 +20,6 @@
 
 		strong
 			font-size: 1.6em
-
-		.call-to-action-link
-			white-space: nowrap
-			padding: $spacing-unit / 2 $spacing-unit
-			background-color: $vermelho-claro
-			color: #FFF
-			border-radius: 5px
-			box-shadow: 0 3px 10px 0 $grey-color-dark
-			text-shadow: 0 -1px 1px $grey-color-dark
 
 		+media-query($on-palm)
 			display: flex
@@ -41,5 +32,17 @@
 			> *
 				display: inline-block
 
+	.teltip
+		width: 100%
+
 	.hero-footer
 		padding-top: $spacing-unit
+
+		.footer-call-to-action
+			float: right
+
+		.share-widget
+			float: left
+
+			.widget-label
+				display: none
